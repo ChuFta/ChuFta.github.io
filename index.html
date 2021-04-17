@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>ChuFta</title>
-    </head>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    <body>
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
 
-        <h1>Hello! I'm ChuFta</h1>
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
 
-        <div class="row">
-            <div class="column">
-                <a href="https://discord.com/users/403868346455556097/">
-                    <img alt="Discord" src="discord.png">
-                </a>
-            </div>
+<body>
 
-             <div class="column">
-                <a href="https://steamcommunity.com/id/chuftaa/">
-                    <img alt="Steam" src="steam.png">
-                </a>
-            </div>
+    <h2>Hello! I'm ChuFta</h2>
 
-            <div class="column">
-                <a href="https://twitter.com/ChuFta555">
-                    <img alt="Twitter" src="twitter.png">
-                </a>
-            </div>
+    <div class="row">
 
-            <div class="column">
-                <a href="https://github.com/ChuFta">
-                    <img alt="GitHub" src="github.png">
-                </a>
-            </div>
+        <div class="column">
+            <a href="https://discord.com/users/403868346455556097/">
+                <img alt="Discord" src="discord.png" width=200" height="200">
+             </a>
         </div>
 
-    </body>
+        <div class="column">
+            <a href="https://steamcommunity.com/id/chuftaa/">
+                <img alt="Steam" src="steam.png" width=200" height="200">
+             </a>
+        </div>
+
+        <div class="column">
+            <a href="https://twitter.com/ChuFta555">
+                <img alt="Twitch" src="twitch.png" width=200" height="200">
+             </a>
+        </div>
+
+        <div class="column">
+            <a href="https://github.com/ChuFta">
+                <img alt="GitHub" src="github.png" width=200" height="200">
+             </a>
+        </div>
+
+    </div>
+
+</body>
+
 </html>
